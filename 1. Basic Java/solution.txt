@@ -1,0 +1,123 @@
+Java Basic
+
+
+1. How to create a class, object, method and its signature
+
+=> 
+1. Create a Class:
+
+A class is a blueprint for objects. It contains fields (variables) and methods to describe the behavior of an object. Here's an example of a simple class:
+
+// MyClass.java
+public class MyClass {
+    // Fields (variables)
+    int myField;
+
+    // Constructor (optional)
+    public MyClass(int initialValue) {
+        this.myField = initialValue;
+    }
+
+    // Methods
+    public void myMethod() {
+        System.out.println("Hello from myMethod!");
+    }
+}
+
+2. Create an Object:
+
+An object is an instance of a class. You can create an object using the new keyword, and you can initialize it using a constructor:
+
+// MainClass.java
+public class MainClass {
+    public static void main(String[] args) {
+        // Create an object of MyClass
+        MyClass myObject = new MyClass(42);
+
+        // Access fields and methods of the object
+        System.out.println("Field value: " + myObject.myField);
+        myObject.myMethod();
+    }
+}
+
+3. Method Signature:
+
+A method signature includes the method's name, return type, and parameter types (if any). For example, in the MyClass example, myMethod has the following signature:
+
+// Method Signature: void myMethod()
+
+Here, void is the return type (meaning the method doesn't return anything), and there are no parameters.
+
+
+Summary:
+Class: Blueprint for objects.
+Object: Instance of a class.
+Method: Behavior or action that objects of the class can perform.
+Method Signature: Includes method name, return type, and parameter types.
+
+
+
+
+
+2. Write a program to print your name.
+=>
+
+public class PrintName {
+    public static void main(String[] args) {
+        System.out.println("Mohammad Tarique");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+3. Write a program for a Single line comment, multi-line and documentation comments
+
+=>
+The // syntax is used for single-line comments.
+
+The /* */ syntax is used for multi-line comments.
+
+Documentation comments typically start with /** and provide information about the class or method.
+
+
+public class CommentExample {
+
+    
+    public static void main(String[] args) {
+
+        /*  
+         This   
+         is   
+         multi line   
+         comment  
+        */    
+
+        // Output a message to the console : This is a single-line comment
+        System.out.println("Hello, World!");
+
+        /*
+         * Documentation comment
+         * This type of comment is used for generating documentation.
+         * It provides information about the class or method.
+         */
+
+         /**  
+          * Documentation comment
+          * This type of comment is used for generating documentation. 
+          * It provides information about the class or method. 
+          * @author Mohammad Tarique  
+          * @version 16.0 
+          * @since 23-12-2023  
+         */    
+
+    }
+}
+
+
